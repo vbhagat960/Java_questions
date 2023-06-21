@@ -1,0 +1,40 @@
+package GFG;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+public class Q13 {
+	public static ArrayList<Integer> Armstrong_nos(int a,int b) {
+			ArrayList<Integer> array = new ArrayList<>();
+			for(int num=a;num<b;num++) {
+				int count = 0;
+				int x = num;
+				while(x!=0) {
+					x = x/10;
+					count++;
+				}
+				int y = num;
+				int sum=0;
+				int rem;
+				while(y!=0) {
+					rem = y%10;
+					sum = sum + (int)Math.pow(rem,count);
+					y=y/10;
+				}
+				if(sum == num) {
+					array.add(num);
+				}
+			}
+		return array;
+			
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the first number:");
+		int a = sc.nextInt();
+		System.out.println("Enter the second number:");
+		int b = sc.nextInt();
+		System.out.println(Armstrong_nos(a,b));
+		sc.close();
+		
+	}
+}
