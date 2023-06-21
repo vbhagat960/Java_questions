@@ -1,0 +1,23 @@
+package GFG;
+
+import java.util.*;
+
+public class Q15 {
+	public static String TypeChecking(char c) {
+		String s;
+		if(c == 'a'||c == 'e'||c == 'i'||c == 'o'||c == 'u') {
+			s = "Vowel";
+		}
+		else {
+			s = "consonant";
+		}
+		return s;
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the character: ");
+		char c = sc.next().charAt(0);
+		System.out.println(TypeChecking(c));
+		sc.close();
+	}
+}
