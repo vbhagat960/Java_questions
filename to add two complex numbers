@@ -1,0 +1,24 @@
+package GFG;
+
+public class Q6 {
+	
+	int real;
+	int image;
+	Q6(int real,int image){
+		this.real = real;
+		this.image = image;
+	}
+	public static Q6 add(Q6 c1,Q6 c2) {
+		Q6 c3 = new Q6(0,0);
+		c3.real = c1.real + c2.real;
+		c3.image = c1.image + c2.image;
+		return c3;
+	}
+	public static void main(String[] args) {
+		Q6 c1 = new Q6(4,5);
+		Q6 c2 = new Q6(10,5);
+		Q6 c4 = new Q6(0,0);
+		c4 = add(c1,c2);
+		System.out.println("Addition is "+c4.real+"+"+" i"+c4.image);
+	}
+}
