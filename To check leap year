@@ -1,0 +1,36 @@
+package GFG;
+
+import java.util.Scanner;
+
+public class Q12 {
+	public static boolean CheckLeap(int year) {
+		boolean is_leap_year = false;
+		if(year%4==0) {
+			is_leap_year = true;
+			if(year%100==0) {
+				if(year%400==0) {
+					is_leap_year =true;
+				}
+				else {
+					is_leap_year = false;
+				}
+			}
+		}
+		else {
+			 is_leap_year = false;
+		}
+		return is_leap_year;
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the year:");
+		int year = sc.nextInt();
+		if(CheckLeap(year)==true) {
+			System.out.println("The year "+year+" is a leap year");
+		}
+		else {
+			System.out.println("The year "+year+" is not a leap year");
+		}
+		sc.close();
+	}
+}
