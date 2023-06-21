@@ -1,0 +1,23 @@
+package GFG;
+import java.util.*;
+public class Q5 {
+
+	static String addition(String x,String y) {
+		
+		int a = Integer.parseInt(x,2);
+		int b = Integer.parseInt(y,2);
+		
+		int sum = a + b;
+		String s = Integer.toBinaryString(sum);
+		return s;
+	}
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the two strings ");
+		String x = sc.nextLine();
+		String y = sc.nextLine();
+		System.out.println("The addition is : "+addition(x,y));
+		sc.close();
+		
+	}
+}
