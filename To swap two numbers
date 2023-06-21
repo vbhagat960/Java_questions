@@ -1,0 +1,19 @@
+package GFG;
+
+import java.util.Scanner;
+public class Q4 {
+	public static void main(String[] args) {
+		System.out.println("Enter the two numbers: ");
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		
+		int temp = a;
+		a = b;
+		b = temp;
+		
+		System.out.println(" The swapped numbers are: "+a+"\n"+b);
+		sc.close();
+		
+	}
+}
