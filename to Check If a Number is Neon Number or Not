@@ -1,0 +1,31 @@
+package GFG;
+
+import java.util.*;
+
+public class Q14 {
+	public static boolean Neon(int num) {
+		int square = num*num;
+		int y = square,rem,sum=0;
+		
+		while(y!=0) {
+			rem = y%10;
+			sum = sum + rem;
+			y = y/10;
+		}
+		if(sum == num) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number: ");
+		int num = sc.nextInt();
+		System.out.println(Neon(num));
+		sc.close();
+	}
+}
