@@ -1,0 +1,27 @@
+package GFG;
+
+import java.util.Scanner;
+public class Q17 {
+	public static int fibonacci(int n) {
+		int first_term = 0;
+		int second_term = 1;
+		int i = 2,sum = 0;
+		while(i<=2*n) {
+			int third_term = first_term + second_term;
+			if(i%2==0) {
+				sum = sum + third_term;
+			}
+			first_term = second_term;
+			second_term = third_term;
+			i++;
+		}
+		return sum;
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the value of n: ");
+		int n = sc.nextInt();
+		System.out.println(fibonacci(n));
+		sc.close();
+	}
+}
