@@ -1,0 +1,22 @@
+package GFG;
+
+import java.util.Scanner;
+
+public class Q24 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number: ");
+		int num = sc.nextInt();
+		int i,j,k;
+		for(i=0;i<num;i++) {
+			for(k=0;k<i;k++) {
+				System.out.print(" ");
+			}
+			for(j=i;j<2*num-i-1;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		sc.close();
+	}
+}
