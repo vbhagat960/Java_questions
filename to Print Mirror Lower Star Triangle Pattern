@@ -1,0 +1,39 @@
+package GFG;
+
+import java.util.Scanner;
+
+public class Q28 {
+	public static void DisplayUpper(int num) {
+		int i,j,k;
+		for(i=0;i<num;i++) {
+			for(j=0;j<i;j++) {
+				System.out.print(" ");
+			}
+			for(k=0;k<num-i;k++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+		
+	}
+	public static void DisplayLower(int num) {
+		int i,j,k;
+		for(i=0;i<num;i++) {
+			for(j=0;j<num-i-1;j++) {
+				System.out.print(" ");
+			}
+			for(k=0;k<i+1;k++) {
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the value of num: ");
+		int num = sc.nextInt();
+		DisplayUpper(num);
+		DisplayLower(num);
+		sc.close();
+	}
+}
