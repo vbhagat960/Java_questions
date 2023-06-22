@@ -1,0 +1,15 @@
+package GFG;
+
+import java.util.Scanner;
+
+public class Q20 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the length and breadth respectively : ");
+		int length = sc.nextInt();
+		int breadth = sc.nextInt();
+		int perimeter = length * breadth ;
+		System.out.println(perimeter);
+		sc.close();
+	}
+}
