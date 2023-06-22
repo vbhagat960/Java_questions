@@ -1,0 +1,16 @@
+package GFG;
+import java.util.Scanner;
+
+public class Q19 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the principal,rate,time respectively: ");
+		int p = sc.nextInt();
+		String input = sc.next();
+		double r = Double.parseDouble(input);
+		int t = sc.nextInt();
+		double comp_interest = p*Math.pow(1+r/100, t);
+		System.out.println(comp_interest);
+		sc.close();
+	}
+}
