@@ -1,0 +1,14 @@
+package GFG;
+
+import java.util.Scanner;
+
+public class Q37 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the decimal value: ");
+		int decimal = sc.nextInt();
+		String hd = Integer.toHexString(decimal);
+		System.out.println(hd);
+		sc.close();
+	}
+}
