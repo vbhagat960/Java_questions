@@ -1,0 +1,18 @@
+package GFG;
+
+import java.util.Scanner;
+
+public class Q33 {
+	public static void BTO(String binary) {
+		int num = Integer.parseInt(binary,2);
+		String str = Integer.toOctalString(num);
+		System.out.println(str);
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the binary number: ");
+		String binary = sc.next();
+		BTO(binary);
+		sc.close();
+	}
+}
