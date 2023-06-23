@@ -1,0 +1,33 @@
+package GFG;
+
+import java.util.Scanner;
+
+public class Q31 {
+	public static void Square(int l) {
+		String[][] matrix = new String[l][l];
+		int i,j;
+		for(i=0;i<l;i++) {
+			for(j=0;j<l;j++) {
+				if(i==0||j==0||i==(l-1)||j==(l-1)||i==j||(i+j==l)) {
+					matrix[i][j] = "*";
+				}
+				else {
+					matrix[i][j] = " ";
+				}
+			}
+		}
+		for(i=0;i<l;i++) {
+			for(j=0;j<l;j++) {
+				System.out.print(matrix[i][j]);
+			}
+			System.out.println();
+		}
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the length of square: ");
+		int l = sc.nextInt();
+		Square(l);
+		sc.close();
+	}
+}
