@@ -1,0 +1,14 @@
+package GFG;
+
+import java.util.Scanner;
+
+public class Q34 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the octal num: ");
+		String octal = sc.next();
+		int decimal = Integer.parseInt(octal,8);
+		System.out.println(decimal);
+		sc.close();
+	}
+}
