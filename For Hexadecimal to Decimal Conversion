@@ -1,0 +1,14 @@
+package GFG;
+
+import java.util.Scanner;
+
+public class Q36 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the hexadecimal number: ");
+		String hd = sc.next();
+		int decimal = Integer.parseInt(hd,16);
+		System.out.println(decimal);
+		sc.close();
+	}
+}
