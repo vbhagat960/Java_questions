@@ -1,0 +1,14 @@
+package GFG;
+
+import java.util.Scanner;
+
+public class Q43 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the string value: ");
+		String str = sc.next();
+		Long l = Long.parseLong(str);
+		System.out.println(l);
+		sc.close();
+	}
+}
