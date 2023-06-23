@@ -1,0 +1,38 @@
+package GFG;
+
+class Encapsulation{
+	private String name;
+	private int age;
+	private int roll_no;
+	
+	public int getAge() {
+		return age;
+	}
+	public int getroll_no() {
+		return roll_no;
+	}
+	public String getname() {
+		return name;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public void setname(String name) {
+		this.name = name;
+	}
+	public void setroll_no(int roll_no) {
+		this.roll_no = roll_no;
+	}	
+}
+public class TestEncapsulation{
+	public static void main(String[] args) {
+		Encapsulation obj = new Encapsulation();
+		obj.setname("Harsh");
+		obj.setAge(19);
+		obj.setroll_no(51);
+		
+		System.out.println(obj.getname());
+		System.out.println(obj.getAge());
+		System.out.println(obj.getroll_no());
+	}
+}
