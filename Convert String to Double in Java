@@ -1,0 +1,14 @@
+package GFG;
+
+import java.util.Scanner;
+
+public class Q41 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the String: ");
+		String str = sc.next();
+		double decimal = Double.parseDouble(str);
+		System.out.println(decimal);
+		sc.close();
+	}
+}
