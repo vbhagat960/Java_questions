@@ -1,0 +1,14 @@
+package GFG;
+
+import java.util.Scanner;
+
+public class Q42 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the double value: ");
+		double x = sc.nextDouble();
+		String str = Double.toString(x);
+		System.out.println(str);
+		sc.close();
+	}
+}	
