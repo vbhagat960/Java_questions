@@ -1,0 +1,10 @@
+package GFG;
+
+public class CodePointAt {
+	public static void main(String[] args) {
+		StringBuffer str = new StringBuffer();
+		str.append("GeeksforGeeks");
+		int unicode = str.codePointAt(10);
+		System.out.println(unicode);
+	}
+}
