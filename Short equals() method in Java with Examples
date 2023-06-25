@@ -1,0 +1,10 @@
+package GFG;
+
+public class equals {
+	public static void main(String[] args) {
+		Short a = Short.valueOf("20");
+ 		Short b = Short.valueOf("30");
+		boolean output = a.equals(b);
+		System.out.println(output);
+	}
+}
