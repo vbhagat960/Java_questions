@@ -1,0 +1,40 @@
+package GFG;
+
+import java.util.Arrays;
+
+public class removeElements {
+	public static int[] RE(int[] arr,int key) {
+		int index = 0;
+		int temp[] = new int[10];
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i] !=key) {
+				temp[index++] = arr[i];
+			}
+		}
+		return temp;
+		
+	}
+	public static void main(String[] args) {
+		int arr[] = {10,20,10,30,50,10};
+		int key = 10;
+		int temp[] = RE(arr,key);
+		
+		int n =temp.length;
+		int count = 0;
+		for(int i=0;i<n;i++) {
+			if(temp[i]!=0) {
+				count++;
+			}
+		}
+		int index=0;
+		int load[] = new int[count];
+		for(int i=0;i<temp.length;i++) {
+			if(temp[i]!=0) {
+				load[index] = temp[i];
+				index++;
+			}
+		}
+		System.out.println(Arrays.toString(load));
+	}
+	
+}
