@@ -1,0 +1,9 @@
+package GFG;
+
+public class getCharacter {
+	public static void main(String[] args) {
+		String str = "GeeksForGeeks";
+		int index = 5;
+		System.out.println(str.charAt(index));
+	}
+}
