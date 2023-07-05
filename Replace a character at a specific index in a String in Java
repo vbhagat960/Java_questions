@@ -1,0 +1,12 @@
+package GFG;
+
+public class replace {
+	public static void main(String[] args) {
+		String str = "Geeks Gor Geeks";
+		char ch = 'F';
+		int index = 6;
+		int l = str.length();
+		str = str.substring(0,index)+ch+str.substring(index+1,l);
+		System.out.println(str);
+	}
+}
