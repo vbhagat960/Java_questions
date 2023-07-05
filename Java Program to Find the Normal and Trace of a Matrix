@@ -1,0 +1,26 @@
+package GFG;
+import java.lang.Math;
+
+
+public class Normal_Trace {
+	public static void main(String[] args) {
+		int[][] matrix = {{8,9,11},{0,1,15},{4,10,-7}};
+		int row = matrix.length;
+		int col = matrix[0].length;
+		double sum = 0.0;
+		double sum2 = 0.0;
+		for(int i=0;i<row;i++) {
+			for(int j=0;j<col;j++) {
+				sum = sum + Math.pow(matrix[i][j],2);
+				if(i==j) {
+					sum2 = sum2 + matrix[i][j]; 
+				}
+			}
+		}
+		double sqrt = Math.pow(sum,0.5);
+		System.out.println(sqrt);
+		int s = (int)sqrt;
+		System.out.println(s);
+		System.out.println(sum2);
+	}
+}
