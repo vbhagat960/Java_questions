@@ -1,0 +1,11 @@
+package GFG;
+
+public class Unicode {
+	public static void main(String[] args) {
+		String str = "Geeks";
+		int index = 2;
+		int unicode = str.charAt(index);
+		System.out.println(unicode);
+		
+	}
+}
