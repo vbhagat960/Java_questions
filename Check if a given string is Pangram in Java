@@ -1,0 +1,23 @@
+package GFG;
+
+public class Pangram {
+	public static boolean allLetter(String str) {
+		str = str.toLowerCase();
+		boolean b = true;
+		for(char i='a';i<='z';i++) {
+			if(!str.contains(String.valueOf(i))) {
+				b = false;
+			}
+		}
+		return b;
+	}
+	public static void main(String[] args) {
+		String str = "Abcdefghijklmnopqrstuvwxyz";
+		if(allLetter(str)) {
+			System.out.println("Yes");
+		}
+		else {
+			System.out.println("No");
+		}
+	}
+}
