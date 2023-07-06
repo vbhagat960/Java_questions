@@ -1,0 +1,15 @@
+package GFG;
+
+public class EvenLength {
+	public static void main(String[] args) {
+		String s = "i am GFG";
+		int length=0;
+		for(String word : s.split(" ")) {
+			length = word.length();
+			
+			if(length%2==0) {
+				System.out.println(word);
+			}
+		}
+	}
+}
