@@ -1,0 +1,13 @@
+package GFG;
+
+public class Insert {
+	public static void main(String[] args) {
+		String originalString = "Computer Portal";
+		int index = 8;
+		int length  = originalString.length();
+		String stringToBeInserted = "Science";
+		String str = new String();
+		str = originalString.substring(0,index+1)+stringToBeInserted+originalString.substring(index+1,length);
+		System.out.println(str);
+	}
+}
