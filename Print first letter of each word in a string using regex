@@ -1,0 +1,13 @@
+package GFG;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+public class regex {
+	public static void main(String[] args) {
+		String str = "Geeks for geeks";
+		Pattern pattern = Pattern.compile("\\b(\\w)");
+		Matcher matcher = pattern.matcher(str);
+		while(matcher.find()) {
+			System.out.println(matcher.group(1));
+		}
+	}
+}
