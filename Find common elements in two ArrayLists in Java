@@ -1,0 +1,12 @@
+package GFG;
+import java.util.*;
+public class CE {
+	public static void main(String[] args) {
+//		ArrayList<String> list1 = new ArrayList<String>(List.of("Hii","Geeks","for","Geeks"));
+//		ArrayList<String> list2 = new ArrayList<String>(List.of("Hii","Geeks","Gaurav"));
+		ArrayList<String> list1 = new ArrayList<String>(List.of("a","b","c","d","e","f"));
+		ArrayList<String> list2 = new ArrayList<String>(List.of("b","d","e","h","g","c"));
+		list1.retainAll(list2);
+		System.out.print(list1);
+	}
+}
