@@ -1,0 +1,10 @@
+package GFG;
+import java.util.*;
+public class firstlastelements {
+	public static void main(String[] args) {
+		List<Integer> aList = new ArrayList<Integer>(List.of(10,30,20,14,2));
+		int size = aList.size();
+		System.out.println(aList.get(0));
+		System.out.print(aList.get(size-1));
+	}
+}
