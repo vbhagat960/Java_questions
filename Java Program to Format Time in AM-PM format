@@ -1,0 +1,13 @@
+package GFG;
+
+import java.text.SimpleDateFormat;
+import java.util.*;
+
+public class FormatTime {
+	public static void main(String[] args) {
+		Date date = new Date();
+		SimpleDateFormat formatTime = new SimpleDateFormat("hh.mm aa");
+		String time = formatTime.format(date);
+		System.out.println(time);
+	}
+}
