@@ -1,0 +1,8 @@
+package GFG;
+import java.util.*;
+public class DisplayCurrent {
+	public static void main(String[] args) {
+		Date current_time = new Date();
+		System.out.println(current_time);
+	}
+}
