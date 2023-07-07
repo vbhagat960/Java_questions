@@ -1,0 +1,14 @@
+package GFG;
+
+public class Polymorphism {
+	static int Multiply(int a,int b) {
+		return a*b;
+	}
+	static double Multiply(double a,double b) {
+		return a*b;
+	}
+	public static void main(String[] args) {
+		System.out.println(Polymorphism.Multiply(3,4));
+		System.out.println(Polymorphism.Multiply(5.5,6.5));
+	}
+}
