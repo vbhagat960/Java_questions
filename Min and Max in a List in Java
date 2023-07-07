@@ -1,0 +1,17 @@
+package GFG;
+import java.util.*;
+public class min_max {
+	public static void main(String[] args) {
+		List<Integer> l = new ArrayList<Integer>();
+		l.add(10);
+		l.add(4);
+		l.add(3);
+		l.add(2);
+		l.add(1);
+		l.add(20);
+		Collections.sort(l);
+		int size = l.size();
+		System.out.println(l.get(0));
+		System.out.print(l.get(size-1));
+	}
+}
