@@ -1,0 +1,12 @@
+package GFG;
+
+import java.util.*;
+
+public class SortInAscendingOrder {
+	public static void main(String[] args) {
+		List<String> l = new ArrayList<String>(List.of("Geeks","For","ForGeeks","GeeksForGeeks","A computer portal"));
+		Collections.sort(l);
+		System.out.print(l);
+		
+	}
+}
