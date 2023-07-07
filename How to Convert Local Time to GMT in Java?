@@ -1,0 +1,12 @@
+package GFG;
+import java.util.*;
+import java.text.*;
+public class ConvertLocalTime {
+	public static void main(String[] args) {
+		Date localTime = new Date();
+		DateFormat s = new SimpleDateFormat("dd/MM/yyyy"+" "+"HH:mm:ss");
+		s.setTimeZone(TimeZone.getTimeZone("GMT"));
+		System.out.println(localTime);
+		System.out.println(s.format(localTime));
+	}
+}
