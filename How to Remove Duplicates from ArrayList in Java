@@ -1,0 +1,14 @@
+package GFG;
+import java.util.*;
+public class RemoveDuplicates {
+	public static void main(String[] args) {
+		List<Integer> l = new ArrayList<Integer>(List.of(1,10,2,2,10,3,3,3,4,5,5));
+		List<Integer> n = new ArrayList<Integer>();
+		for(int element : l) {
+			if(!n.contains(element)) {
+				n.add(element); 
+			}
+		}
+		System.out.println(n);
+	}
+}
