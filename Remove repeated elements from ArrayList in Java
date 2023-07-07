@@ -1,0 +1,15 @@
+package GFG;
+import java.util.*;
+public class Removerepeatedelements {
+	public static void main(String[] args) {
+		ArrayList<Integer> s = new ArrayList<Integer>(List.of(12,23,23,34,45,45,45,45,57,67,89));
+		ArrayList<Integer> w = new ArrayList<Integer>();
+		for(int temp : s) {
+			while(!w.contains(temp)) {
+				w.add(temp);
+			}
+		}
+		System.out.print(w);
+		
+	}
+}
