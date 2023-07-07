@@ -1,0 +1,11 @@
+package GFG;
+import java.util.*;
+public class AddElement {
+	public static void main(String[] args) {
+		LinkedList<String> l = new LinkedList<String>(List.of("e","e","k")); 
+		l.addFirst("G");
+		l.addLast("s");
+		System.out.println(l);
+		
+	}
+}
