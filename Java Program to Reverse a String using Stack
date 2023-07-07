@@ -1,0 +1,22 @@
+package GFG;
+import java.util.*;
+
+
+
+public class ReverseStack {
+	public static void main(String[] args) {
+		String str = "GeeksForGeeks";
+		int size = str.length();
+		char[] arr = new char[size];
+		Stack<Character> stack  = new Stack<Character>();
+		for(int i=0;i<size;i++) {
+			stack.push(str.charAt(i));
+		}
+		int i =0;
+		while(!stack.isEmpty()) {
+			arr[i++] = stack.pop();
+		}
+		String l = new String(arr);
+		System.out.println(l);
+	}
+}
