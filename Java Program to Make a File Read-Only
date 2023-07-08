@@ -1,0 +1,14 @@
+package GFG;
+
+import java.io.File;
+
+public class ReadOnly {
+	public static void main(String[] args) {
+		boolean flag;
+		File file = new File("/home/mayur/GFG.java");
+		flag = file.setReadOnly();
+		System.out.println(flag);
+		flag = file.canWrite();
+		System.out.println(flag);
+	}
+}
