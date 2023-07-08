@@ -1,0 +1,40 @@
+package GFG;
+import java.util.*;
+import java.io.*;
+
+public class WriteFile {
+	public static void Write(File x,File y) {
+		try {
+				FileInputStream in = new FileInputStream(x);
+				FileOutputStream out = new FileOutputStream(y);
+				int n;
+				while((n=in.read())!=-1) {
+					out.write(n);
+				}
+				if(in!=null) {
+					in.close();
+				}
+				if(out!=null) {
+					out.close();
+				}
+		}
+		catch(FileNotFoundException e) {
+			System.out.println(e);
+		}
+		catch(IOException e) {
+			System.out.println(e);
+		}
+	}
+	
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String a = sc.nextLine();
+		String b = sc.nextLine();
+		
+		File x = new File(a);
+		File y = new File(b);
+		Write(x,y);
+		sc.close();
+	}
+}
