@@ -1,0 +1,41 @@
+package GFG;
+import java.util.*;
+import java.io.*;
+public class CopyContent {
+	public static void CopyContent1TO2(File x,File y) {
+		try {
+				FileInputStream in = new FileInputStream(x);
+				FileOutputStream out = new FileOutputStream(y);
+				int n;
+				while((n=in.read())!=-1) {
+					out.write(n);
+				}
+				if(in!=null) {
+					in.close();
+				}
+				if(out!=null) {	
+					out.close();
+				}
+		}
+		catch(FileNotFoundException e) {
+			System.out.println(e);
+		}
+		catch(IOException e) {
+			System.out.println(e);
+		}
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the first files pathname from where u want to copy: ");
+		String a = sc.nextLine();
+		System.out.println("Enter the second files pathname to where u want to write : ");
+		String b = sc.nextLine();
+		
+		
+		
+		File x = new File(a);
+		File y = new File(b);
+		CopyContent1TO2(x,y);
+		sc.close();
+	}
+}
