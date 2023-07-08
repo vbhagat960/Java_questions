@@ -1,0 +1,8 @@
+package GFG;
+import java.io.File;
+public class SizeOfADirectory {
+	public static void main(String[] args) {
+		java.io.File file = new java.io.File("file_name.txt");
+		file.length();
+	}
+}
