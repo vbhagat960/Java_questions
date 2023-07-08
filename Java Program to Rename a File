@@ -1,0 +1,15 @@
+package GFG;
+import java.io.File;
+public class RenameFile {
+	public static void main(String[] args) {
+		File file = new File("/home/mayur/Folder/GFG.java");
+		File rename = new File("/home/mayur/Folder/HellowWorld.java");
+		boolean flag = file.renameTo(rename);
+		if(flag==true) {
+			System.out.println("File successfully rename");
+		}
+		else {
+			System.out.println("Operation Failed");
+		}
+	}
+}
