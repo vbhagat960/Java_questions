@@ -1,0 +1,34 @@
+//package GFG;
+//
+//public class ExceptionsInJava {
+//	public static void main(String[] args) {
+//		1.printStackTrace();
+//		int a = 5;
+//		int b = 0;
+//		try {
+//			System.out.println(a/b);
+//		}
+//		catch(ArithmeticException e) {
+//			e.printStackTrace();
+//		}
+		
+//		2.toString()
+//		int a =5;
+//		int b=0;
+//		try {
+//			System.out.println(a/b);
+//		}
+//		catch(ArithmeticException e) {
+//			System.out.println(e.toString());
+//		}
+//		3.getMessage()
+//		int a = 5;
+//		int b=0;
+//		try {
+//			System.out.println(a/b);
+//		}
+//		catch(ArithmeticException e) {
+//			System.out.println(e.getMessage());
+//		}
+//	}
+//}
