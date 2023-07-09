@@ -1,0 +1,71 @@
+//package GFG;
+//import java.util.*;
+//public class TypesOfErrors {
+//	1.Runtime error
+//	-ArrayIndexOutOFBounds
+//	-ArithmeticException
+//	2.Compile Time errors
+//	-Wrong method and variable name
+//	-Missing semicolons
+//	-SyntaxError
+//	
+//	
+//	
+//	public static void main(String[] args) {
+//		ArrayIndexOutOfBounds
+//		int[] arr = new int[5];
+//		arr[9] = 250;
+//		System.out.println("Value Asssigned! ");
+//		ArithmeticException
+//		int var1 = 15;
+//		int var2 = 5;
+//		int var3 = 0;
+//		int ans1 = var1/var2;
+//		int ans2 = var1/var3;
+//		System.out.println(ans1);
+//		System.out.println(ans2);
+//		Wrong method or variable names
+//		int a = 40,b=60;
+//		int Sum = a+b;
+//		System.out.println(sum);
+//		Missing semicolons
+//		String s = "GeeksForGeeks";
+//		System.out.println(s)
+//		Missing parenthesis,square brackets,or curly braces
+//		System.out.println("Printing 1 to 5 \n");
+//		int i;
+//		for(i=1;i<=5;i++ {
+//			System.out.println(i+"\n");
+//		}
+//		IncorrectFormat
+//		System.out.println("Multiplication table of 7");
+//		int a=7,ans;
+//		int i;
+//		for(i=1,i<=10;i++) {
+//			ans = a*i;
+//			System.out.println(ans);
+//		}
+//		int num = 789;
+//		int reversednum =0;
+//		int remainder;
+//		while(num!=0) {
+//			remainder = num/10;
+//			reversednum = reversenum*10+remainder;
+//			num/=10;
+//			
+//		}
+//		System.out.println(reversednum);
+//		Displaying the wrong message
+//		int a=2,b=8,c=6;
+//		System.out.println("Finding the largest number\n");
+//		if(a>b && a>c) {
+//			System.out.println(a);
+//		}
+//		else if(b>a && b>c) {
+//			System.out.println(b);
+//		}
+//		else {
+//			System.out.println(c);
+//		}
+//	}
+//}
