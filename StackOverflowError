@@ -1,0 +1,13 @@
+package GFG;
+
+public class StackOverflowError {
+	static void check(int n) {
+		if(n==0) {
+			return;
+		}
+		check(n+1);
+	}
+	public static void main(String[] args) {
+		check(3);
+	}
+}
