@@ -1,0 +1,27 @@
+package GFG;
+
+public class Unreachable {
+	public static void main(String[] args) {
+//		System.out.println("I will get printed");
+//		return;
+//		System.out.println("I want to get printed");
+//		int a = 2;
+//		for(;;) {
+//			if(a==2) {
+//				break;
+//				System.out.println("I want to get printed");
+//			}
+//		}
+//		try {
+//			throw new Exception("Custom Exception");
+//			System.out.println("Hello");
+//		}
+//		catch(Exception e) {
+//			e.printStackTrace();
+//		}
+		for(int i=0;i<5;i++) {
+			continue;
+			System.out.println("Hello");
+		}
+	}
+}
