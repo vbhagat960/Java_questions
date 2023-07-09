@@ -1,0 +1,12 @@
+package GFG;
+import java.util.*;
+public class ArrayintoCollection {
+	public static void main(String[] args) {
+		String[] arr = {"Virat","Sachin","Rohit","Bumrah"};
+		for(int i=0;i<arr.length;i++) {
+			System.out.println(arr[i]);
+		}
+		List<String> l = Arrays.asList(arr);
+		System.out.println(l);
+	}
+}
