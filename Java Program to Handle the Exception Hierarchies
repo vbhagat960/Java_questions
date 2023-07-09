@@ -1,0 +1,16 @@
+package GFG;
+
+public class UncheckedException2 {
+	public static void main(String[] args) {
+		try {
+			int num[] = new int[10];
+			num[10] = 30/0;
+		}
+		catch(ArithmeticException e) {
+			System.out.println(e);
+		}
+		catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println(e);
+		}
+	}
+}
