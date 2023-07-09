@@ -1,0 +1,16 @@
+package GFG;
+import java.util.*;
+public class Collections_shuffle {
+	public static void main(String[] args) {
+		ArrayList<String> mylist = new ArrayList<String>();
+		 mylist.add("code");
+		 mylist.add("quiz");
+		 mylist.add("geeksorgeeks");
+		 mylist.add("code");
+		 mylist.add("practice");
+		 mylist.add("qa");
+		 System.out.println(mylist);
+		 Collections.shuffle(mylist);
+		 System.out.println(mylist); 
+	}
+}
