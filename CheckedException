@@ -1,0 +1,13 @@
+package GFG;
+import java.io.*;
+import java.util.*;
+public class CheckedException {
+	public static void main(String[] args) {
+		try {
+			FileInputStream file = new FileInputStream("C:/myfile.txt"); 
+		}
+		catch(Exception e){
+			System.out.println(e);
+		}
+	}
+}
