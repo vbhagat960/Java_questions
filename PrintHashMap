@@ -1,0 +1,28 @@
+package GFG;
+import java.util.*;
+public class PrintHashMap {
+	String firstname;
+	String lastname;
+	PrintHashMap(String fn,String ln){
+		this.firstname = fn;
+		this.lastname = ln;
+	}
+	public String toString() {
+		return "| First Name : "+firstname+"| LastName :"+lastname;	
+	}
+	public static void main(String[] args) {
+		HashMap<Integer,PrintHashMap> hm = new HashMap<Integer,PrintHashMap>();
+		PrintHashMap p1 = new PrintHashMap("Mohit","Singh");
+		PrintHashMap p2 = new PrintHashMap("Tarun","Anand");
+		PrintHashMap p3 = new PrintHashMap("Madhu","Singh");
+		PrintHashMap p4 = new PrintHashMap("Rohit","Ahuja");
+		hm.put(101,p1);
+		hm.put(102,p2);
+		hm.put(103,p3);
+		hm.put(104,p4);
+		for(Map.Entry<Integer,PrintHashMap> m: hm.entrySet()) {
+			System.out.println(m.getKey()+" "+ m.getValue().toString());
+		}
+		
+	}
+}
