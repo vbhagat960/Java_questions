@@ -1,0 +1,21 @@
+package GFG;
+import java.util.*;
+public class Collection {
+	public static void main(String[] args) {
+		LinkedList<Integer> list = new LinkedList<Integer>();
+		list.add(99);
+		list.add(54);
+		list.add(112);
+		list.add(184);
+		list.add(2);
+		int size = list.size();
+		boolean x = list.isEmpty();
+		System.out.println(size);
+		System.out.println(x);
+		list.clear();
+		int size2 = list.size();
+		boolean x2 = list.isEmpty();
+		System.out.println(size2);
+		System.out.println(x2);
+	}
+}
