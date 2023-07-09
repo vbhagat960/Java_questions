@@ -1,0 +1,13 @@
+package GFG;
+import java.io.*;
+public class CheckedException_2 {
+	public static void main(String[] args) {
+		try {
+			FileInputStream file1 = new FileInputStream("/c:GFG");
+		}
+		catch(FileNotFoundException e) {
+			System.out.println(e);
+		}
+		
+	}
+}
