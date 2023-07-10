@@ -1,0 +1,12 @@
+package GFG;
+import java.util.*;
+import java.util.stream.*;
+public class Convert_list_to_Stream {
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<String>(List.of("GeeksForGeeks","A computer portal","for Geeks"));
+		System.out.println(list);
+		Stream<String> stream = list.stream();
+		System.out.println(Arrays.toString(stream.toArray()));
+		
+	}
+}
