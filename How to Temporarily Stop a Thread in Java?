@@ -1,0 +1,15 @@
+package GFG;
+
+public class Temporarily_Stop_A_thread {
+	public static void main(String[] args) {
+		Thread t1 = new Thread() 
+		{
+			public void run() {
+				System.out.println("They are good people");
+			}
+		};
+		t1.start();
+		t1.suspend();
+		
+	}
+}
