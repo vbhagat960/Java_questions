@@ -1,0 +1,13 @@
+package GFG;
+import java.util.*;
+public class SetToArray {
+	public static void main(String[] args) {
+		Set<String> set = new HashSet<String>();
+		set.add("ForGeeks");
+		set.add("A computer portal");
+		set.add("Geeks");
+		String[] str = new String[set.size()];
+		str = set.toArray(new String[0]);
+		System.out.println(Arrays.toString(str));
+	}
+}
