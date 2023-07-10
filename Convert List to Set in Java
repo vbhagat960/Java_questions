@@ -1,0 +1,12 @@
+package GFG;
+import java.util.*;
+public class Convert_List_to_set {
+	public static void main(String[] args) {
+		List<Integer> list = new ArrayList<Integer>(List.of(1,2,3,4,5)); 
+		Set<Integer> set = new HashSet<Integer>();
+		for(int temp : list) {
+			set.add(temp);
+		}
+		System.out.println(set);
+	}
+}
