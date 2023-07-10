@@ -1,0 +1,10 @@
+package GFG;
+import java.util.*;
+import java.io.*;
+public class StringTOObject {
+	public static void main(String[] args) {
+		String str = "GeeksForGeeks";
+		Object object = str;
+		System.out.println(object.getClass().getName());
+	}
+}
