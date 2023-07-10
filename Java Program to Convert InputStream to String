@@ -1,0 +1,38 @@
+package GFG;
+import java.util.*;
+import java.io.*;
+public class InputStream_to_String {
+	public static void main(String[] args) {
+		System.out.println("Enter the filename: ");
+		Scanner sc = new Scanner(System.in);
+		String filename = sc.nextLine();
+		File file = new File(filename);
+		InputStreamReader isr = null;
+		try {
+			InputStream is = new FileInputStream(file);
+			isr = new InputStreamReader(is);
+			char charArray[] = new char[(int)file.length()];
+			isr.read(charArray);
+			String contents = new String(charArray);
+			System.out.println(contents);
+		}
+		catch(IOException e) {
+			System.out.println(e);
+		}
+		finally {
+			if(sc!=null) {
+				sc.close();
+			}
+			if(isr != null) {
+				try{
+					isr.close();
+				}
+				catch(IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+		
+		
+	}
+}
