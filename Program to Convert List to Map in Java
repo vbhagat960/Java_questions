@@ -1,0 +1,17 @@
+package GFG;
+import java.util.*;
+public class Convert_List_to_map {
+	public static void main(String[] args) {
+		List<Integer> l = new ArrayList<Integer>();
+		l.add(1);
+		l.add(2);
+		l.add(3);
+		Map<Integer,String> map = new HashMap<Integer,String>();
+		for(int i=0;i<l.size();i++) {
+			map.put(l.get(i),"geeks");
+		}
+		for(Map.Entry<Integer,String> s : map.entrySet()) {
+			System.out.println(s);
+		}
+	}
+}
