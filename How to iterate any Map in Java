@@ -1,0 +1,23 @@
+package GFG;
+import java.util.*;
+public class iterate_any_map {
+	String  value;
+	iterate_any_map(String n){
+		this.value = n;
+	}
+	public String toString() {
+		return value;
+	}
+	public static void main(String[] args) {
+		HashMap<Integer,iterate_any_map> hm = new HashMap<Integer,iterate_any_map>();
+		iterate_any_map p1 = new iterate_any_map("Vikrant");
+		iterate_any_map p2 = new iterate_any_map("Shoumik");
+		iterate_any_map p3 = new iterate_any_map("Goldeep");
+		hm.put(101,p1);
+		hm.put(102,p2);
+		hm.put(103,p3);
+		for(Map.Entry<Integer,iterate_any_map> temp : hm.entrySet()) {
+			System.out.println(temp);
+		}
+	}
+}
