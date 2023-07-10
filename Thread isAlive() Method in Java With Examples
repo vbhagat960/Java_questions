@@ -1,0 +1,16 @@
+package GFG;
+import java.util.*;
+import java.io.*;
+public class Thread_isAlive {
+	public static void main(String[] args) {
+		Thread t1 = new Thread()
+		{
+			public void run() {
+				System.out.println("forgeeks");
+			}
+		};
+		t1.start();
+		System.out.println(t1.isAlive());
+		
+	}
+}
