@@ -1,0 +1,26 @@
+package GFG;
+
+import java.util.*;
+import java.io.*;
+public class List_all_Files {
+	public static void recursion(File file1) {
+		if(file1.isDirectory()) {
+			String[] str = file1.list();
+			for(int i=0;i<str.length;i++) {
+				File file2 = new File(str[i]);
+				recursion(file2);
+			}
+		}
+		else {
+			System.out.println(file1.getName());
+		}
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the filepath: ");
+		String filepath = sc.nextLine();
+		File file1 = new File(filepath);
+		recursion(file1);
+		sc.close();
+	}
+}
