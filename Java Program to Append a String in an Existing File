@@ -1,0 +1,17 @@
+package GFG;
+import java.util.*;
+import java.io.*;
+public class Append_a_String {
+	public static void main(String[] args) {
+		File file = new File("C:\\Users\\R K Bhagat\\Desktop\\Placements\\shell.c");
+		String str = "Life of Hell";
+		try {
+			OutputStream out = new FileOutputStream(file,true);
+			out.write(str.getBytes());
+			out.close();
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+	}
+}
